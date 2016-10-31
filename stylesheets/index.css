@@ -1,0 +1,81 @@
+.particles-js-canvas-el {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-shadow: 0 0 1px #000, 0 0 5px #000;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    font-size: 4em;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.icon-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    display: block;
+    width: 260px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    list-style: none;
+    perspective: 600px;
+}
+
+.icon-list > li {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    margin-bottom: 0.5em;
+    margin-right: 0.2em;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    cursor: pointer;
+    font-size: 1em;
+    overflow: hidden;
+    color: #fff;
+}
+
+.icon-list > li:hover {
+    transition: all .25s, transform .7s linear;
+}
+
+.icon-list > li a {
+    color: inherit;
+    line-height: 28px;
+}
+
+.icon-list > li.facebook:hover {
+    background-color: #3b5998;
+}
+
+.icon-list > li.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.icon-list > li.codepen:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.icon-list > li.github:hover {
+    background-color: #000;
+}
+
+.icon-list > li.email:hover {
+    background-color: #ea4335;
+}
