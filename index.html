@@ -5,50 +5,92 @@
         <title>Filip Vitas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     </head>
     <body>
-        <div class="page-header" id="particles-js"></div>
+        <div class="page-header" id="particles-js">
+            <h1 class="my-name">Filip Vitas</h1>
 
-        <h1 class="project-name">Filip Vitas</h1>
+            <ul class="my-spec">
+                <span>My specifications:</span>
+                <li>CPU natural dual core</li>
+                <li>No RAM</li>
+                <li>Unlimited SSD drive</li>
+                <li>Highly durable battery, up to 24 hours</li>
+                <li>Fast recharge using caffeine</li>
+                <li>Supports all major operating systems</li>
+                <li>Works better in Wifi area</li>
+                <li>User friendly</li>
+            </ul>
 
-        <ul class="icon-list">
-            <li class="facebook">
-                <a target="_blank" href="https://www.facebook.com/filip.vitas.1">
-                    <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li class="linkedin">
-                <a target="_blank" href="https://rs.linkedin.com/in/vitasfilip">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="codepen">
-                <a target="_blank" href="http://codepen.io/FilipVitas/">
-                    <i class="fa fa-codepen"></i>
-                </a>
-            </li>
-            <li class="github">
-                <a target="_blank" href="https://github.com/felix557700">
-                    <i class="fa fa-github"></i>
-                </a>
-            </li>
-            <li class="email">
-                <a target="_blank" href="mailto:vitasfilip90@gmail.com">
-                    <i class="fa fa-envelope-o"></i>
-                </a>
-            </li>
-        </ul>
+            <div id="Filip" class="typing"></div>
+
+            <ul class="icon-list">
+                <li class="facebook">
+                    <a target="_blank" href="https://www.facebook.com/filip.vitas.1">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a target="_blank" href="https://rs.linkedin.com/in/vitasfilip">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="codepen">
+                    <a target="_blank" href="http://codepen.io/FilipVitas/">
+                        <i class="fa fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="github">
+                    <a target="_blank" href="https://github.com/felix557700">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li class="email">
+                    <a target="_blank" href="mailto:vitasfilip90@gmail.com">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
+        <script src="//cdn.jsdelivr.net/theaterjs/latest/theater.min.js" async></script>
         <script>
             window.onload = function () {
                 particlesJS.load('particles-js', 'config/particles.json', function () {
-                    console.log('particles.js config loaded, burn baby burn');
+                    console.log('particles.js config loaded, burn baby burn')
                 });
+
+                var typer = theaterJS()
+
+                typer
+                    .addActor('Filip', {
+                        "minSpeed": {
+                            "erase": 500,
+                            "type": 80
+                        },
+
+                        "maxSpeed": {
+                            "erase": 1000,
+                            "type": 450
+                        },
+                        accuracy: 1
+                    })
+
+                typer
+                    .addScene('Filip:I\'m Developer.')
+                    .addScene(1000)
+                    .addScene(-13, ' like java')
+                    .addScene(1000)
+                    .addScene(0, 'script. 🤘')
+                    .addScene(1000)
+                    .addScene('Filip:Basically I\'m turning coffee into code.')
+                    .addScene(10000)
+                    .addScene(typer.replay)
             }
         </script>
     </body>
