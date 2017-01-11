@@ -25,8 +25,8 @@ a:hover {
     color: white;
     text-align: center;
     background: #136a8a;
-    background: -webkit-linear-gradient(to left, #136a8a, #267871);
-    background: linear-gradient(to left, #136a8a, #267871);
+    background: -webkit-linear-gradient(45deg, #0077b5, #008891);
+    background: linear-gradient(45deg, #0077b5, #008891);
 }
 
 .particles-js-canvas-el {
